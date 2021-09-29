@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Andersen Homework</string>
+    <string name="greetings_message">Happy Birthday to Ilya</string>
 </resources>
