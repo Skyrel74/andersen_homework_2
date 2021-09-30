@@ -7,7 +7,7 @@ android {
     compileSdk 28
     defaultConfig {
         applicationId "ru.skyrel74.andersenhomework2"
-        minSdk 17
+        minSdk 21
         targetSdk 21
         versionCode 1
         versionName "1.0"
