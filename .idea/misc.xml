@@ -4,10 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout-land/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout-land/activity_scrolling_task2.xml" value="0.21516754850088182" />
         <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout-port/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout-port/activity_scrolling_challange.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout-port/activity_scrolling_task3.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout-v21/activity_main.xml" value="0.20969202898550723" />
         <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout/activity_scrolling.xml" value="0.264" />
+        <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout/activity_scrolling_homework.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout/activity_scrolling_task2.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/layout/activity_scrolling_task3.xml" value="0.20425724637681159" />
         <entry key="..\:/Users/Acer/Desktop/repos/Andersen_Homework_2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
