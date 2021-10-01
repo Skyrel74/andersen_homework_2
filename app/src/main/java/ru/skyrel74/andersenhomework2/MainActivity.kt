@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
         runCatching { throw Exception("Some message for logging") }
             .onFailure { error -> Log.e(LOG_TAG, error.message) }
+
     }
 
     fun showToast(view: View): Unit =
