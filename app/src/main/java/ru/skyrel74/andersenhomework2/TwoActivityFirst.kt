@@ -21,9 +21,22 @@ class TwoActivityFirst : AppCompatActivity(R.layout.activity_two_first) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        Log.d(LOG_TAG, "-------")
+        Log.d(LOG_TAG, "onCreate")
+
         mMessageEditText = findViewById(R.id.editText_main)
         mReplyHeadTextView = findViewById(R.id.text_header_reply)
         mReplyTextView = findViewById(R.id.text_message_reply)
+
+        if (savedInstanceState != null) {
+            val isVisible = savedInstanceState.getBoolean("reply_visible")
+            if (isVisible) {
+                mReplyHeadTextView.visibility = View.VISIBLE
+                mReplyTextView.text = savedInstanceState.getString("reply_text")
+                mReplyTextView.visibility = View.VISIBLE
+            }
+        }
     }
 
     fun launchSecondActivity(view: View): Unit {
@@ -45,5 +58,45 @@ class TwoActivityFirst : AppCompatActivity(R.layout.activity_two_first) {
                 mReplyTextView.visibility = View.VISIBLE
             }
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        if (mReplyHeadTextView.visibility == View.VISIBLE) {
+            outState.putBoolean("reply_visible", true)
+            outState.putString("reply_text",
+                mReplyTextView.text.toString())
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(LOG_TAG, "onStart")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(LOG_TAG, "onPause")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(LOG_TAG, "onRestart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(LOG_TAG, "onResume")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(LOG_TAG, "onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(LOG_TAG, "onDestroy")
     }
 }
