@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ToastActivity">
 
     <Button
         android:id="@+id/button_toast"
@@ -13,8 +13,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/design_default_color_primary"
-        android:onClick="showToast"
-        android:text="@string/button_label_toast"
+        android:onClick="showHello"
+        android:text="@string/button_label_hello"
         android:textColor="@android:color/white"
         android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,5 +1,6 @@
 package ru.skyrel74.andersenhomework2
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -9,9 +10,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+const val HELLO_COUNT = "ru.skyrel74.andersenhomework2.extra.COUNT"
 
-    private val LOG_TAG = MainActivity::class.java.simpleName
+class ToastActivity : AppCompatActivity(R.layout.activity_toast) {
+
+    private val LOG_TAG = ToastActivity::class.java.simpleName
 
     private var mCount = 0
     private lateinit var mShowCount: TextView
@@ -25,6 +28,13 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         runCatching { throw Exception("Some message for logging") }
             .onFailure { error -> Log.e(LOG_TAG, error.message) }
 
+    }
+
+    fun showHello(view: View): Unit {
+        val intent = Intent(this, HelloActivity::class.java)
+        intent.putExtra(HELLO_COUNT, mCount)
+
+        startActivity(intent)
     }
 
     fun showToast(view: View): Unit =
