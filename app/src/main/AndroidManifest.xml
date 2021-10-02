@@ -14,9 +14,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndersenHomework">
         <activity
+            android:name=".ShopActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ReciveImplicitIntentsActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -30,13 +41,7 @@
         </activity>
         <activity
             android:name=".ImplicitIntentsActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".CountActivity"
             android:exported="true" />
@@ -65,6 +70,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TwoActivityFirst" />
         </activity>
+        <activity
+            android:name=".IntentChallenge1"
+            android:exported="true" />
+        <activity
+            android:name=".IntentChallenge2"
+            android:exported="true" />
     </application>
 
 </manifest>
